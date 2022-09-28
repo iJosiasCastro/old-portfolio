@@ -15,7 +15,12 @@ export default {
       { name: 'format-detection', content: 'telephone=no' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css' },
+      { rel: 'stylesheet', href: 'https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.css' },
+    ],
+    script : [
+      { src: 'https://unpkg.com/flowbite@1.5.3/dist/flowbite.js', body: true}
     ]
   },
 
@@ -40,5 +45,9 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+  },
+
+  server: {
+    host: "0.0.0.0"
   }
 }
