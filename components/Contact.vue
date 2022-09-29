@@ -2,37 +2,37 @@
     <div class="bg-blue-700 grid lg:grid-cols-2">
         <div class="max-w-6xl mx-auto px-2 py-8 text-white">
             <div class="max-w-md mx-auto">
-                <h3 class="text-2xl font-semibold mb-3">Contactame</h3>
-                <p>Me interesan las oportunidades de trabajo freelancer, especialmente los grandes proyectos. Pero, si tenés otra petición o pregunta, no dudes en contactar.</p>
+                <h3 class="text-2xl font-semibold mb-3">{{data.contact_title}}</h3>
+                <p v-html="data.contact_description"></p>
                 
                 <form class="mt-8">
                     <div class="grid md:grid-cols-2 md:gap-6">
                         <div class="mb-6">
-                            <label for="name" class="block mb-2 text-sm font-medium">Nombre</label>
-                            <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Escribí tu nombre" required>
+                            <label for="name" class="block mb-2 text-sm font-medium">{{data.contact_form.name.label}}</label>
+                            <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.name.placeholder" required>
                         </div>
                         <div class="mb-6">
-                            <label for="email" class="block mb-2 text-sm font-medium">Email</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Escribí tu email" required>
+                            <label for="email" class="block mb-2 text-sm font-medium">{{data.contact_form.email.label}}</label>
+                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.email.placeholder" required>
                         </div>
                     </div>
                     <div class="mb-6">
-                        <label for="repeat-password" class="block mb-2 text-sm font-medium">Asunto</label>
-                        <input type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" placeholder="Escribí un asunto" required>
+                        <label for="subject" class="block mb-2 text-sm font-medium">{{data.contact_form.email.label}}</label>
+                        <input type="text" id="subject" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.subject.placeholder" required>
                     </div>
                     <div class="mb-6">
-                        <label for="repeat-password" class="block mb-2 text-sm font-medium">Mensaje</label>
-                        <textarea type="text" id="repeat-password" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light resize-none" placeholder="Escribí tu mensaje" rows="10" required>
+                        <label for="message" class="block mb-2 text-sm font-medium">{{data.contact_form.message.label}}</label>
+                        <textarea type="text" id="message" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light resize-none" :placeholder="data.contact_form.message.placeholder" rows="10" required>
                         </textarea>
                     </div>
 
-                    <button type="submit" class="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700">Enviar mensaje</button>
+                    <button type="submit" class="text-blue-700 bg-white hover:bg-gray-200 focus:ring-4 focus:outline-none focus:ring-blue-500 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-gray-800 dark:text-white dark:hover:bg-gray-700">{{data.contact_form.submit.label}}</button>
                 </form>
 
             </div>
         </div>
         <div class="relative overflow-hidden">
-            <img class="h-full w-full object-cover" src="/img/map.png" alt="">
+            <img class="h-full w-full object-cover" :src="$store.state.darkmode ? '/img/map-dark.png' : '/img/map.png' " alt="">
             <div class="bg-white dark:bg-gray-800 text-lg p-3 md:p-5 absolute top-2 left-2 md:top-4 md:left-4 bg-opacity-75 ">
                 <h5 class="text-xl font-semibold mb-3">Josias Castro</h5>
                 <div class="flex items-center">
@@ -56,3 +56,10 @@
         </div>
     </div>
 </template>
+
+
+<script>
+export default {
+    props:['data'],
+}
+</script>

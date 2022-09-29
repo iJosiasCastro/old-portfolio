@@ -16,11 +16,11 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/flowbite@1.5.3/dist/flowbite.min.css' },
-      { rel: 'stylesheet', href: 'https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.css' },
+      { rel: 'stylesheet', href: '/css/flowbite.min.css' },
+      { rel: 'stylesheet', href: '/css/tailwind.min.css' },
     ],
     script : [
-      { src: 'https://unpkg.com/flowbite@1.5.3/dist/flowbite.js', body: true}
+      { src: '/js/flowbite.js', body: true}
     ]
   },
 
@@ -41,6 +41,7 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+      '@nuxt/http'
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build

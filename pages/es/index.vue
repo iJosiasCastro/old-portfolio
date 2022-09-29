@@ -1,9 +1,9 @@
 <template>
-  <Home :data="data" />
+    <Home :data="data" />
 </template>
 
 <script>
-import Home from '../views/Home.vue'
+import Home from '../../views/Home.vue'
 export default {
   head(){
     return {
@@ -11,12 +11,12 @@ export default {
     }
   },
   async asyncData({$http}){
-    return await $http.$get("/lang/en.json")
+    return await $http.$get("/lang/es.json")
       .then((res) => {
         return {data: res}
       })
   },
   components: { Home },
-  name: 'en.index'
+  name: 'es.index',
 }
 </script>

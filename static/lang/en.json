@@ -1,0 +1,220 @@
+{
+    "lang": "en",
+    "header_items": [
+        {"title": "Inicio", "route": "es.inicio"},
+        {"title": "Trabajos", "route": "es.trabajos"},
+        {"title": "Contacto", "route": "es.contacto"}
+    ],
+    "home_presentation_title": "👋 Hello, i am Josias Castro",
+    "home_presentation_paragraph": "Soy desarrollador de Web Apps, amo la tecnologia y puedo decir que el <i>código es lo mío</i>.",
+    "home_hero_paragraph": "Aprendí a programar de forma autómata para crear mis propios proyectos, luego me inicié como programador freelancer, trabajé con emprendimientos y empresas, colaborado en muchos grupos de trabajo para conseguir un producto digital de excelente calidad.<br><br>Soy una persona segura de sí misma, curiosa por naturaleza y siempre estoy trabajando para mejorar mis habilidades.",
+    "skills": [
+        {
+            "title": "Frontend",
+            "description": "Me especializó en desarrollar Web Apps con Vue y Nuxt; la potencia de estas herramientas es increíble.",
+            "icon": "<path d=\"M21.698 10.658l2.302 1.342-12.002 7-11.998-7 2.301-1.342 9.697 5.658 9.7-5.658zm-9.7 10.657l-9.697-5.658-2.301 1.343 11.998 7 12.002-7-2.302-1.342-9.7 5.657zm0-19l8.032 4.685-8.032 4.685-8.029-4.685 8.029-4.685zm0-2.315l-11.998 7 11.998 7 12.002-7-12.002-7z\"/>",
+            "points":[
+                {
+                    "title": "Lenguajes",
+                    "items": ["HTML", "CSS", "SASS", "Javascript ES5/ES6"]
+                },
+                {
+                    "title" : "Frameworks",
+                    "items": ["Vue", "Nuxt", "Bootstrap", "Tailwind"]
+                },
+                {
+                    "title" : "Herramientas",
+                    "items": ["Vue", "Nuxt", "Bootstrap", "Tailwind"]
+                }
+            ]
+        },
+        {
+            "title": "Backend",
+            "description": "El buen diseño de una base de datos  y su modelación es la clave de toda Web App o sitio web.",
+            "icon": "<path d=\"m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm2.818 5.865 2.635 1.622-2.641 1.645c-.207.146-.318.378-.318.613 0 .601.682.966 1.182.613l3.511-2.257c.199-.141.318-.369.318-.614 0-.244-.119-.472-.318-.613l-3.505-2.235c-.498-.35-1.182.009-1.182.612 0 .236.111.468.318.614zm9.678 3.873c0-.414-.336-.75-.75-.75h-3.5c-.413 0-.75.336-.75.75s.337.75.75.75h3.5c.414 0 .75-.336.75-.75z\" fill-rule=\"nonzero\"/>",
+            "points":[
+                {
+                    "title": "Lenguajes",
+                    "items": ["PHP", "SQL"]
+                },
+                {
+                    "title" : "Frameworks",
+                    "items": ["Laravel (MVC y Rest API)", "Firebase"]
+                },
+                {
+                    "title" : "Herramientas",
+                    "items": ["Git", "Oracle Cloud", "Linux", "Dia (DFD y DER)"]
+                }
+            ]
+        },
+        {
+            "title": "Profesor",
+            "description": "Imparto clases de programación, mi meta es ayudar a otros desarrolladores a seguir mejorando.",
+            "icon": "<path d=\"M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v16h-14v-16z\"/>",
+            "points":[
+                {
+                    "title": "Estadisticas:",
+                    "items": ["+2 años de experiencia", "+100 clases", "+400 horas de lección"]
+                },
+                {
+                    "title" : "Habilidades",
+                    "items": ["Seguimiento de tareas", "Explicación detallada", "Uso de problemas didácticos", "Explicación con recursos visuales", "Ejemplos de código en vivo"]
+                }
+            ]
+        }
+    ],
+    "home_works_title": "Mis últimos trabajos",
+    "home_works_button": "Ver todos los trabajos",
+    "works": [
+        {
+            "slug" : "focomotor",
+            "title" : "Focomotor",
+            "overview": "Un marketplace de vehículos con el objetivo de conectar a vendedores con compradores, cualquier usuario puede publicar su vehículo gratis y sin comisiones, solo se debe registrar, completar los datos y subir unas fotos del vehículo, ¡Así de fácil!.",
+            "dev_notes": "Este proyecto se construyó con una REST Api en Laravel la cual es consultada por su cliente desarrollado en NuxtJs; esto hace que el sitio sea 100% rastreable para buscadores pero con todas las ventajas de una Web App.",
+            "skills": [
+                "Laravel",
+                "Rest APIs",
+                "Vue",
+                "Javascript ES6",
+                "Tailwind"
+            ],
+            "images": [
+                "/img/works/focomotor-1.png",
+                "/img/works/focomotor-2.png",
+                "/img/works/focomotor-3.png",
+                "/img/works/focomotor-4.png"
+            ]
+        },
+        {
+            "slug" : "krestaautomotores",
+            "title" : "Kresta Automotores",
+            "overview": "Web App para la gestión de una concesionaria de vehículos: cargar y administrar socios, registros de caja y vehículos. El objetivo de la aplicación es organizar las finanzas y calcular las ganancias para cada socio cuando un vehículo es vendido, permitiendo imprimir y enviar la liquidación a cada socio.",
+            "dev_notes": "Es una aplicación pensada para correr del lado del cliente, por lo cual utilicé únicamente a Vue de principio a fin y a Firebase como base de datos y servidor de imágenes. El administrador puede acceder al sistema desde cualquier dispositivo con su usuario y clave.",
+            "skills": [
+                "Vue",
+                "Firebase",
+                "Javascript ES6",
+                "Bootstrap"
+            ],
+            "images": [
+                "/img/works/krestaautomotores-1.png",
+                "/img/works/krestaautomotores-2.png",
+                "/img/works/krestaautomotores-4.png",
+                "/img/works/krestaautomotores-3.png"
+            ]
+        },
+        {
+            "slug" : "pazmuseu",
+            "title" : "PazMuseu",
+            "overview": "Este proyecto fue presentado como solución planteada en las Olimpiadas de informática del 2022. El objetivo fue realizar un museo virtual, desde el cual se puede acceder mediante un BeepCons. Desde la aplicación se puede conectar a un BeepCons y acceder a la obra adecuada. El museo virtual cuenta con sistema de exposiciones, rutas, guías, turnos e inscripciones.",
+            "dev_notes": "La aplicación fue construida totalmente con Laravel en el plazo de una semana, cuenta con 5 cruds completos (exposiciones, rutas, guías, turnos e inscripciones), adicionalmente cuenta con sistema de envío de emails para la confirmación de inscripciones a turnos. El sistema tiene un panel de administración incorporado. A continuación se puede ver el gráfico DER que se utilizó:",
+            "skills": [
+                "Laravel",
+                "Bootstrap"
+            ],
+            "images": [
+                "/img/works/pazmuseu-1.png",
+                "/img/works/pazmuseu-2.png",
+                "/img/works/pazmuseu-3.png"
+            ]
+        },
+        {
+            "slug" : "eestn2",
+            "title" : "Escuela Técnica N°2",
+            "overview": "Como estudiante de Informática de la “Escuela Técnica N°2” de Olavarría, Buenos Aires, Argentina, con mi curso evaluamos que la escuela necesitaba un canal de comunicación digital que permita que próximos estudiantes la conozcan y puedan encontrar información oportuna, es por eso que desarrollamos un sitio desde el cual se pueden publicar noticias, información de las tecnicaturas, y libros digitales.",
+            "dev_notes": "Mi trabajo fue llevar las ideas y esquemas a un sitio web finalizado, para esto utilicé Vue y Firebase como base de datos y servidor de imágenes. El sitio se puede administrar y cuenta con un dashboard de gestión completo.",
+            "skills": [
+                "Vue",
+                "Firebase",
+                "Javascript ES6",
+                "Bootstrap"
+            ],
+            "images": [
+                "/img/works/eestn2-1.png",
+                "/img/works/eestn2-2.png",
+                "/img/works/eestn2-3.png",
+                "/img/works/eestn2-4.png",
+                "/img/works/eestn2-5.png"
+            ]
+        }, 
+
+        {
+            "slug" : "calcbraille",
+            "title" : "Calculadora Braille",
+            "overview": "Se trata de una aplicación web de calculadora simple e intuitiva, con el fin de ser utilizada por personas no videntes o con problemas visuales. La calculadora esta diseñada con colores llamativos y con altos contrastes, cada tecla es narrada por la aplicación así como el resultado de los cálculos. El proyecto fue presentado en la “Ferias de Educación, Artes, Ciencias y Tecnología” del de Olavarría, Buenos Aires, Argentina en 2021 obteniendo la siguiente certificación:",
+            "dev_notes": "La aplicación fue construida con Vue, su desarrollo buscó mejorar las alternativas al mercado existente, cuidando la interfaz y haciendo que los números sean narrados correctamente, para esto se utilizó la librería de npm “written-number”.",
+            "skills": [
+                "Vue",
+                "Javascript ES6",
+                "Bootstrap",
+                "CSS Avanzado"
+            ],
+            "images": [
+                "/img/works/calcbraille-1.png",
+                "/img/works/calcbraille-2.png"
+            ]
+        },   
+        
+        {
+            "slug" : "elbosqueinmobiliaria",
+            "title" : "El bosque inmobiliaria",
+            "overview": "Un sitio web es un excelente medio para promocionar propiedades, y más cuando es mediante una página totalmente personalizada, este es el caso de la inmobiliaria “El bosque” ubicada en Río Turbio, Santa Cruz, Argentina. Desde su página se puede ver a detalle cada propiedad; galería, metros cuadrados, ambientes, descripción, servicios, entre otros.",
+            "dev_notes": "La web fue desarrollada con Wordpress y Elementor, fue imprescindible el plugin JetEngine, desde el cual se implementó un nuevo tipo de post, campos personalizados, formularios de administración y filtros de búsqueda.",
+            "skills": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Wordpress (Elementor y JetEngine avanzado)"
+            ],
+            "images": [
+                "/img/works/elbosqueinmobiliaria-1.png",
+                "/img/works/elbosqueinmobiliaria-2.png",
+                "/img/works/elbosqueinmobiliaria-3.png"
+            ]
+        },
+        {
+            "slug" : "capacitacionargentina",
+            "title" : "Capacitación Argentina",
+            "overview": "Sitio web de cursos online con certificación universitaria. Hay más de 20 cursos organizados en 9 categorías. Se puede encontrar la información fácilmente y tiene diversos canales de comunicación para que cualquier estudiante interesado pueda obtener más información.",
+            "dev_notes": "Este sitio web fue desarrollado con Wordpress ya que permite un rápido desarrollo y administración. Utilicé el conocido editor visual Elementor, aun así en ocasiones tuve que programar secciones con HTML y Javascript para que el resultado está completamente adaptado a los deseos del cliente.",
+            "skills": [
+                "HTML",
+                "CSS",
+                "Javascript",
+                "Wordpress (Elementor avanzado)"
+            ],
+            "images": [
+                "/img/works/capacitacionargentina-1.png",
+                "/img/works/capacitacionargentina-2.png",
+                "/img/works/capacitacionargentina-3.png"
+            ]
+        }
+    ],
+    "contact_title": "Contactame",
+    "contact_description": "Me interesan las oportunidades de trabajo freelancer, especialmente los grandes proyectos. Pero, si tenés otra petición o pregunta, no dudes en contactar.",
+    "contact_form":{
+        "name": {
+            "label": "Nombre",
+            "placeholder": "Escribí tu nombre"
+        },
+        "email": {
+            "label": "Email",
+            "placeholder": "Escribí tu email"
+        },
+        "subject": {
+            "label": "Asunto",
+            "placeholder": "Escribí un asunto"
+        },
+        "message": {
+            "label": "Mensaje",
+            "placeholder": "Escribí un mensaje"
+        },
+        "submit": {
+            "label": "Enviar mensaje"
+        }
+    },
+    "footer_before_paragraph": "Hecho con "
+
+
+
+}
