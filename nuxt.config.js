@@ -1,10 +1,11 @@
+import routes from './routes.js'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'Porfolio',
+    title: 'Portfolio',
     htmlAttrs: {
       lang: 'en'
     },
@@ -30,6 +31,9 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    { src: '~/plugins/vue-picture-swipe', ssr: false },
+    { src: '~/plugins/filters.js', ssr: true },
+    
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -50,5 +54,9 @@ export default {
 
   server: {
     host: "0.0.0.0"
-  }
+  },
+
+  router: {
+    ...routes,
+  },
 }

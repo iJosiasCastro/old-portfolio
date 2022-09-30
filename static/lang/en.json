@@ -1,13 +1,15 @@
 {
     "lang": "en",
+    "lang_prefix": "",
     "header_items": [
-        {"title": "Inicio", "route": "es.inicio"},
-        {"title": "Trabajos", "route": "es.trabajos"},
-        {"title": "Contacto", "route": "es.contacto"}
+        {"title": "Inicio", "url": "/"},
+        {"title": "Trabajos", "url": "/works"},
+        {"title": "Contacto", "url": "/contact"}
     ],
-    "home_presentation_title": "👋 Hello, i am Josias Castro",
+    "home_title": "👋 Hola, soy Josias Castro",
+    "home_presentation_title": "👋 Hello, im Josias Castro",
     "home_presentation_paragraph": "Soy desarrollador de Web Apps, amo la tecnologia y puedo decir que el <i>código es lo mío</i>.",
-    "home_hero_paragraph": "Aprendí a programar de forma autómata para crear mis propios proyectos, luego me inicié como programador freelancer, trabajé con emprendimientos y empresas, colaborado en muchos grupos de trabajo para conseguir un producto digital de excelente calidad.<br><br>Soy una persona segura de sí misma, curiosa por naturaleza y siempre estoy trabajando para mejorar mis habilidades.",
+    "home_about_hero_paragraph": "Aprendí a programar de forma autómata para crear mis propios proyectos, luego me inicié como programador freelancer, trabajé con emprendimientos y empresas, colaborado en muchos grupos de trabajo para conseguir un producto digital de excelente calidad.<br><br>Soy una persona segura de sí misma, curiosa por naturaleza y siempre estoy trabajando para mejorar mis habilidades.",
     "skills": [
         {
             "title": "Frontend",
@@ -64,11 +66,18 @@
         }
     ],
     "home_works_title": "Mis últimos trabajos",
+    "home_read_more_button": "Leer más",
     "home_works_button": "Ver todos los trabajos",
+    "works_breadcums_home_label": "Inicio",
+    "works_breadcums_home_url": "/",
+    "works_breadcums_works_label": "Trabajos",
+    "works_breadcums_works_url": "/works",
+    "works_index_title": "Todos mis trabajos",
     "works": [
         {
             "slug" : "focomotor",
             "title" : "Focomotor",
+            "site": "https://focomotor.com.ar/",
             "overview": "Un marketplace de vehículos con el objetivo de conectar a vendedores con compradores, cualquier usuario puede publicar su vehículo gratis y sin comisiones, solo se debe registrar, completar los datos y subir unas fotos del vehículo, ¡Así de fácil!.",
             "dev_notes": "Este proyecto se construyó con una REST Api en Laravel la cual es consultada por su cliente desarrollado en NuxtJs; esto hace que el sitio sea 100% rastreable para buscadores pero con todas las ventajas de una Web App.",
             "skills": [
@@ -78,6 +87,7 @@
                 "Javascript ES6",
                 "Tailwind"
             ],
+            "thumbnail": "/img/works/thumbnails/focomotor.png",
             "images": [
                 "/img/works/focomotor-1.png",
                 "/img/works/focomotor-2.png",
@@ -88,6 +98,7 @@
         {
             "slug" : "krestaautomotores",
             "title" : "Kresta Automotores",
+            "site": "https://kresta-automotores.web.app/",
             "overview": "Web App para la gestión de una concesionaria de vehículos: cargar y administrar socios, registros de caja y vehículos. El objetivo de la aplicación es organizar las finanzas y calcular las ganancias para cada socio cuando un vehículo es vendido, permitiendo imprimir y enviar la liquidación a cada socio.",
             "dev_notes": "Es una aplicación pensada para correr del lado del cliente, por lo cual utilicé únicamente a Vue de principio a fin y a Firebase como base de datos y servidor de imágenes. El administrador puede acceder al sistema desde cualquier dispositivo con su usuario y clave.",
             "skills": [
@@ -96,6 +107,7 @@
                 "Javascript ES6",
                 "Bootstrap"
             ],
+            "thumbnail": "/img/works/thumbnails/krestaautomores.png",
             "images": [
                 "/img/works/krestaautomotores-1.png",
                 "/img/works/krestaautomotores-2.png",
@@ -106,12 +118,14 @@
         {
             "slug" : "pazmuseu",
             "title" : "PazMuseu",
+            "site": "https://pazmuseu.focomotor.com.ar/",
             "overview": "Este proyecto fue presentado como solución planteada en las Olimpiadas de informática del 2022. El objetivo fue realizar un museo virtual, desde el cual se puede acceder mediante un BeepCons. Desde la aplicación se puede conectar a un BeepCons y acceder a la obra adecuada. El museo virtual cuenta con sistema de exposiciones, rutas, guías, turnos e inscripciones.",
             "dev_notes": "La aplicación fue construida totalmente con Laravel en el plazo de una semana, cuenta con 5 cruds completos (exposiciones, rutas, guías, turnos e inscripciones), adicionalmente cuenta con sistema de envío de emails para la confirmación de inscripciones a turnos. El sistema tiene un panel de administración incorporado. A continuación se puede ver el gráfico DER que se utilizó:",
             "skills": [
                 "Laravel",
                 "Bootstrap"
             ],
+            "thumbnail": "/img/works/thumbnails/pazmuseu.png",
             "images": [
                 "/img/works/pazmuseu-1.png",
                 "/img/works/pazmuseu-2.png",
@@ -121,6 +135,7 @@
         {
             "slug" : "eestn2",
             "title" : "Escuela Técnica N°2",
+            "site": "https://eest-n2.web.app/",
             "overview": "Como estudiante de Informática de la “Escuela Técnica N°2” de Olavarría, Buenos Aires, Argentina, con mi curso evaluamos que la escuela necesitaba un canal de comunicación digital que permita que próximos estudiantes la conozcan y puedan encontrar información oportuna, es por eso que desarrollamos un sitio desde el cual se pueden publicar noticias, información de las tecnicaturas, y libros digitales.",
             "dev_notes": "Mi trabajo fue llevar las ideas y esquemas a un sitio web finalizado, para esto utilicé Vue y Firebase como base de datos y servidor de imágenes. El sitio se puede administrar y cuenta con un dashboard de gestión completo.",
             "skills": [
@@ -129,6 +144,7 @@
                 "Javascript ES6",
                 "Bootstrap"
             ],
+            "thumbnail": "/img/works/thumbnails/eestn2.png",
             "images": [
                 "/img/works/eestn2-1.png",
                 "/img/works/eestn2-2.png",
@@ -141,14 +157,17 @@
         {
             "slug" : "calcbraille",
             "title" : "Calculadora Braille",
+            "site": "https://calculadora-braille.web.app/",
             "overview": "Se trata de una aplicación web de calculadora simple e intuitiva, con el fin de ser utilizada por personas no videntes o con problemas visuales. La calculadora esta diseñada con colores llamativos y con altos contrastes, cada tecla es narrada por la aplicación así como el resultado de los cálculos. El proyecto fue presentado en la “Ferias de Educación, Artes, Ciencias y Tecnología” del de Olavarría, Buenos Aires, Argentina en 2021 obteniendo la siguiente certificación:",
             "dev_notes": "La aplicación fue construida con Vue, su desarrollo buscó mejorar las alternativas al mercado existente, cuidando la interfaz y haciendo que los números sean narrados correctamente, para esto se utilizó la librería de npm “written-number”.",
             "skills": [
                 "Vue",
+                "NuxtJs",
                 "Javascript ES6",
                 "Bootstrap",
                 "CSS Avanzado"
             ],
+            "thumbnail": "/img/works/thumbnails/calcbraille.png",
             "images": [
                 "/img/works/calcbraille-1.png",
                 "/img/works/calcbraille-2.png"
@@ -158,6 +177,7 @@
         {
             "slug" : "elbosqueinmobiliaria",
             "title" : "El bosque inmobiliaria",
+            "site": "https://elbosqueinmobiliaria.com.ar/",
             "overview": "Un sitio web es un excelente medio para promocionar propiedades, y más cuando es mediante una página totalmente personalizada, este es el caso de la inmobiliaria “El bosque” ubicada en Río Turbio, Santa Cruz, Argentina. Desde su página se puede ver a detalle cada propiedad; galería, metros cuadrados, ambientes, descripción, servicios, entre otros.",
             "dev_notes": "La web fue desarrollada con Wordpress y Elementor, fue imprescindible el plugin JetEngine, desde el cual se implementó un nuevo tipo de post, campos personalizados, formularios de administración y filtros de búsqueda.",
             "skills": [
@@ -166,6 +186,7 @@
                 "Javascript",
                 "Wordpress (Elementor y JetEngine avanzado)"
             ],
+            "thumbnail": "/img/works/thumbnails/elbosqueinmobiliaria.png",
             "images": [
                 "/img/works/elbosqueinmobiliaria-1.png",
                 "/img/works/elbosqueinmobiliaria-2.png",
@@ -175,6 +196,7 @@
         {
             "slug" : "capacitacionargentina",
             "title" : "Capacitación Argentina",
+            "site": "http://capacitacionargentina.com/",
             "overview": "Sitio web de cursos online con certificación universitaria. Hay más de 20 cursos organizados en 9 categorías. Se puede encontrar la información fácilmente y tiene diversos canales de comunicación para que cualquier estudiante interesado pueda obtener más información.",
             "dev_notes": "Este sitio web fue desarrollado con Wordpress ya que permite un rápido desarrollo y administración. Utilicé el conocido editor visual Elementor, aun así en ocasiones tuve que programar secciones con HTML y Javascript para que el resultado está completamente adaptado a los deseos del cliente.",
             "skills": [
@@ -183,6 +205,7 @@
                 "Javascript",
                 "Wordpress (Elementor avanzado)"
             ],
+            "thumbnail": "/img/works/thumbnails/capacitacionargentina.png",
             "images": [
                 "/img/works/capacitacionargentina-1.png",
                 "/img/works/capacitacionargentina-2.png",

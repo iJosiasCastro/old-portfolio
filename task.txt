@@ -1,0 +1,5 @@
+Make work index view
+
+Make contact view
+
+Add animations

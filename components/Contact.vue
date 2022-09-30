@@ -2,8 +2,8 @@
     <div class="bg-blue-700 grid lg:grid-cols-2">
         <div class="max-w-6xl mx-auto px-2 py-8 text-white">
             <div class="max-w-md mx-auto">
-                <h3 class="text-2xl font-semibold mb-3">{{data.contact_title}}</h3>
-                <p v-html="data.contact_description"></p>
+                <h3 class="text-2xl font-semibold mb-3">{{data.contact_form_title}}</h3>
+                <p v-html="data.contact_form_description"></p>
                 
                 <form class="mt-8">
                     <div class="grid md:grid-cols-2 md:gap-6">
