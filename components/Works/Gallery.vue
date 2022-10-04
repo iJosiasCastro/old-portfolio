@@ -1,5 +1,5 @@
 <template>
-<div class="flex col-span-4">
+<div class="flex">
     <div>
         <div v-for="(image, i) in images" :key="i"
             @mouseover="previewImage = i"

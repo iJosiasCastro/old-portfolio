@@ -2,7 +2,7 @@
     <div class="bg-blue-700 grid lg:grid-cols-2">
         <div class="max-w-6xl mx-auto px-2 py-8 text-white">
             <div class="max-w-md mx-auto">
-                <h3 class="text-2xl font-semibold mb-3">{{data.contact_form_title}}</h3>
+                <h3 class="text-xl sm:text-2xl font-semibold mb-3">{{data.contact_form_title}}</h3>
                 <p v-html="data.contact_form_description"></p>
                 
                 <form class="mt-8">
@@ -33,8 +33,8 @@
         </div>
         <div class="relative overflow-hidden">
             <img class="h-full w-full object-cover" :src="$store.state.darkmode ? '/img/map-dark.png' : '/img/map.png' " alt="">
-            <div class="bg-white dark:bg-gray-800 text-lg p-3 md:p-5 absolute top-2 left-2 md:top-4 md:left-4 bg-opacity-75 ">
-                <h5 class="text-xl font-semibold mb-3">Josias Castro</h5>
+            <div class="bg-white dark:bg-gray-800 sm:text-lg p-3 md:p-5 absolute top-2 left-2 md:top-4 md:left-4 bg-opacity-75 ">
+                <h5 class="sm:text-lg sm:text-xl font-semibold mb-2 sm:mb-3">Josias Castro</h5>
                 <div class="flex items-center">
                     <svg class="w-5 h-5 text-red-500 -ml-1 mr-1" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 0c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602zm0 11c-1.657 0-3-1.343-3-3s1.343-3 3-3 3 1.343 3 3-1.343 3-3 3z"/></svg>
                     <p>Buenos Aires, Olavarria</p>

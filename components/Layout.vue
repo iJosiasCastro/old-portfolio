@@ -47,7 +47,7 @@
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1" id="mobile-menu-2">
                     <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:space-x-8 lg:mt-0 mr-5">
                         <li v-for="item in data.header_items" :key="item.route">
-                            <NuxtLink :to="{name: item.route_name}" class="block py-2 pr-4 pl-3 text-blue-600 border-b border-gray-100 lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-blue-400 dark:hover:text-white dark:border-gray-700">
+                            <NuxtLink :to="{name: data.lang_prefix+item.route_name}" class="block py-2 pr-4 pl-3 text-blue-600 border-b border-gray-100 lg:border-0 lg:hover:text-primary-700 lg:p-0 dark:text-blue-400 dark:hover:text-white dark:border-gray-700">
                                 {{item.title}}
                             </NuxtLink>
                         </li>
@@ -59,7 +59,7 @@
             <slot></slot>
         </main>
         <footer class="bg-gray-800 text-white border-t dark:border-gray-600">
-            <div class="flex flex-col md:flex-row justify-center md:justify-between max-w-6xl mx-auto items-center py-8 px-4">
+            <div class="flex flex-col md:flex-row justify-center md:justify-between max-w-6xl mx-auto items-center py-4 md:py-8 px-4">
                 <p>© 2022 Josias Castro.</p>
                 <p>{{data.footer_before_paragraph}} <a href="https://nuxtjs.org/" class="text-green-400 hover:underline">NuxtJS</a>.</p>
                 <div class="flex items-center mt-8 md:mt-0">

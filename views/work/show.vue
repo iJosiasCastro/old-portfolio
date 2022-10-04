@@ -30,22 +30,22 @@
             </nav>
             
             
-            <div class="grid grid-cols-6 gap-4 mt-8">
-                <WorksGallery :images="work.images" />
-                <div class="col-span-2">
+            <div class="grid grid-cols-1 md:grid-cols-6 gap-4 mt-4 sm:mt-8">
+                <WorksGallery class="md:row-start-1 md:col-span-4" :images="work.images" />
+                <div class="row-start-1 md:col-span-2">
                     <h1 class="text-3xl">{{work.title}}</h1>
-                    <div class="my-4">
-                        <h3 class="text-lg">Resumen</h3>
+                    <div class="my-6">
+                        <h3 class="text-xl font-semibold">{{data.works_show_overview_title}}</h3>
                         <p v-html="work.overview"></p>
                     </div>
-                    <div class="my-4">
-                        <h3 class="text-lg">Desarrollo</h3>
-                        <p v-html="work.dev_notes"></p>
+                    <div class="my-6">
+                        <h3 class="text-xl font-semibold">{{data.works_show_overview_development_title}}</h3>
+                        <p v-html="work.development"></p>
                     </div>
-                    <div class="my-4">
-                        <h3 class="text-lg">Stack</h3>
-                        <div>
-                            <span v-for="(item, i) in work.stack" :key="i" :class="`bg-${item.color}-100 text-${item.color}-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-${item.color}-200 dark:text-${item.color}-800`">
+                    <div class="my-6">
+                        <h3 class="text-xl font-semibold">{{data.works_show_overview_stack_title}}</h3>
+                        <div class="flex flex-wrap">
+                            <span v-for="(item, i) in work.stack" :key="i" :class="`bg-${item.color}-100 text-${item.color}-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-${item.color}-200 dark:text-${item.color}-800 mb-2`">
                                 {{item.name}}
                             </span>
                         </div>

@@ -1,5 +1,8 @@
-Make work index view
-
-Make contact view
-
 Add animations
+
+Save scroll position when change lang
+Fix toggle button
+
+Fix link work title and read more button
+
+Translate every thing

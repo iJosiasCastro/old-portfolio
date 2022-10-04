@@ -2,18 +2,18 @@
     "lang": "en",
     "lang_prefix": "",
     "header_items": [
-        {"title": "Inicio", "url": "/"},
-        {"title": "Trabajos", "url": "/works"},
-        {"title": "Contacto", "url": "/contact"}
+        {"title": "Home", "route_name": "home"},
+        {"title": "Works", "route_name": "works.index"},
+        {"title": "Contact", "route_name": "contact"}
     ],
-    "home_title": "👋 Hola, soy Josias Castro",
-    "home_presentation_title": "👋 Hello, im Josias Castro",
-    "home_presentation_paragraph": "Soy desarrollador de Web Apps, amo la tecnologia y puedo decir que el <i>código es lo mío</i>.",
-    "home_about_hero_paragraph": "Aprendí a programar de forma autómata para crear mis propios proyectos, luego me inicié como programador freelancer, trabajé con emprendimientos y empresas, colaborado en muchos grupos de trabajo para conseguir un producto digital de excelente calidad.<br><br>Soy una persona segura de sí misma, curiosa por naturaleza y siempre estoy trabajando para mejorar mis habilidades.",
+    "home_title": "👋 Hi, i'am Josias Castro",
+    "home_presentation_title": "👋 Hi, i'am Josias Castro",
+    "home_presentation_paragraph": "Fullstack Web Apps Developer, I love technology and I can say that coding is my thing.",
+    "home_about_hero_paragraph": "I started programming in a self-taught way to create my own projects, then I started as a freelancer programmer where I worked with several teams and startups to get a digital product with the best standards.<br><br>I am a self-confident person, curious by nature and I am always working to improve my skills.",
     "skills": [
         {
             "title": "Frontend",
-            "description": "Me especializó en desarrollar Web Apps con Vue y Nuxt; la potencia de estas herramientas es increíble.",
+            "description": "I specialized in developing Web Apps with Vue and NuxtJS; the power of these tools is incredible.",
             "icon": "<path d=\"M21.698 10.658l2.302 1.342-12.002 7-11.998-7 2.301-1.342 9.697 5.658 9.7-5.658zm-9.7 10.657l-9.697-5.658-2.301 1.343 11.998 7 12.002-7-2.302-1.342-9.7 5.657zm0-19l8.032 4.685-8.032 4.685-8.029-4.685 8.029-4.685zm0-2.315l-11.998 7 11.998 7 12.002-7-12.002-7z\"/>",
             "points":[
                 {
@@ -26,13 +26,13 @@
                 },
                 {
                     "title" : "Herramientas",
-                    "items": ["Vue", "Nuxt", "Bootstrap", "Tailwind"]
+                    "items": ["Git", "Wordpress (Elementor Advanced)"]
                 }
             ]
         },
         {
             "title": "Backend",
-            "description": "El buen diseño de una base de datos  y su modelación es la clave de toda Web App o sitio web.",
+            "description": "The structuring of a database and its communication with the frontend is the key to any Web App or website.",
             "icon": "<path d=\"m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm2.818 5.865 2.635 1.622-2.641 1.645c-.207.146-.318.378-.318.613 0 .601.682.966 1.182.613l3.511-2.257c.199-.141.318-.369.318-.614 0-.244-.119-.472-.318-.613l-3.505-2.235c-.498-.35-1.182.009-1.182.612 0 .236.111.468.318.614zm9.678 3.873c0-.414-.336-.75-.75-.75h-3.5c-.413 0-.75.336-.75.75s.337.75.75.75h3.5c.414 0 .75-.336.75-.75z\" fill-rule=\"nonzero\"/>",
             "points":[
                 {
@@ -51,41 +51,43 @@
         },
         {
             "title": "Profesor",
-            "description": "Imparto clases de programación, mi meta es ayudar a otros desarrolladores a seguir mejorando.",
+            "description": "I teach programming classes in my local community, my goal is to help other developers to keep improving.",
             "icon": "<path d=\"M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v16h-14v-16z\"/>",
             "points":[
                 {
-                    "title": "Estadisticas:",
-                    "items": ["+2 años de experiencia", "+100 clases", "+400 horas de lección"]
+                    "title": "Statistics",
+                    "items": ["+2 years of experience", "+100 classes", "+400 lesson hours"]
                 },
                 {
-                    "title" : "Habilidades",
-                    "items": ["Seguimiento de tareas", "Explicación detallada", "Uso de problemas didácticos", "Explicación con recursos visuales", "Ejemplos de código en vivo"]
+                    "title" : "Skills",
+                    "items": ["Monitoring and reinforcement of homework", "Uso de problemas didácticos", "Explanation with visual resources", "Live code examples"]
                 }
             ]
         }
     ],
-    "home_works_title": "Mis últimos trabajos",
-    "home_read_more_button": "Leer más",
-    "home_works_button": "Ver todos los trabajos",
-    "works_breadcums_home_label": "Inicio",
-    "works_breadcums_home_url": "/",
-    "works_breadcums_works_label": "Trabajos",
-    "works_breadcums_works_url": "/works",
-    "works_index_title": "Todos mis trabajos",
+    "home_works_title": "My latest works",
+    "home_read_more_button": "Read more",
+    "home_works_button": "View all jobs",
+    "works_breadcums_home_label": "Home",
+    "works_breadcums_works_label": "Works",
+    "works_index_title": "All my works",
+    "works_show_title": "All my works",
+    "works_show_overview_title": "Overview",
+    "works_show_overview_development_title": "Development",
+    "works_show_overview_stack_title": "Stack",
     "works": [
         {
             "slug" : "focomotor",
             "title" : "Focomotor",
             "site": "https://focomotor.com.ar/",
-            "overview": "Un marketplace de vehículos con el objetivo de conectar a vendedores con compradores, cualquier usuario puede publicar su vehículo gratis y sin comisiones, solo se debe registrar, completar los datos y subir unas fotos del vehículo, ¡Así de fácil!.",
-            "dev_notes": "Este proyecto se construyó con una REST Api en Laravel la cual es consultada por su cliente desarrollado en NuxtJs; esto hace que el sitio sea 100% rastreable para buscadores pero con todas las ventajas de una Web App.",
-            "skills": [
-                "Laravel",
-                "Rest APIs",
-                "Vue",
-                "Javascript ES6",
-                "Tailwind"
+            "overview": "A vehicle marketplace with the objective of connecting sellers with buyers, any user can publish their vehicle for free and without commissions, you only have to register, complete the data and upload some photos of the vehicle, it's that easy!",
+            "development": "This project was built with a REST Api in Laravel which is consulted by its client developed in NuxtJs; this makes the site 100% crawlable for search engines but with all the advantages of a Web App.",
+            "stack": [
+                {"name": "Laravel", "color": "red"},
+                {"name": "Rest APIs", "color": "gray"},
+                {"name": "Vue", "color": "green"},
+                {"name": "Javascript ES6", "color": "yellow"},
+                {"name": "Tailwind", "color": "blue"}
             ],
             "thumbnail": "/img/works/thumbnails/focomotor.png",
             "images": [
@@ -99,13 +101,13 @@
             "slug" : "krestaautomotores",
             "title" : "Kresta Automotores",
             "site": "https://kresta-automotores.web.app/",
-            "overview": "Web App para la gestión de una concesionaria de vehículos: cargar y administrar socios, registros de caja y vehículos. El objetivo de la aplicación es organizar las finanzas y calcular las ganancias para cada socio cuando un vehículo es vendido, permitiendo imprimir y enviar la liquidación a cada socio.",
-            "dev_notes": "Es una aplicación pensada para correr del lado del cliente, por lo cual utilicé únicamente a Vue de principio a fin y a Firebase como base de datos y servidor de imágenes. El administrador puede acceder al sistema desde cualquier dispositivo con su usuario y clave.",
-            "skills": [
-                "Vue",
-                "Firebase",
-                "Javascript ES6",
-                "Bootstrap"
+            "overview": "Web App for the management of a vehicle dealership: loading and administration of partners, cash registers and vehicles. The objective of the application is to organize the finances and calculate the profit for each partner when a vehicle is sold, allowing to print and send the settlement to each partner.",
+            "development": "It is an application designed to work client-side, so I used Vue to send and receive data from Firebase, who provides the database and image server, so the administrator can access the system from any device with your username and password.",
+            "stack": [
+                {"name": "Laravel", "color": "red"},
+                {"name": "Vue", "color": "green"},
+                {"name": "Javascript ES6", "color": "yellow"},
+                {"name": "Bootstrap", "color": "purple"}
             ],
             "thumbnail": "/img/works/thumbnails/krestaautomores.png",
             "images": [
@@ -119,11 +121,11 @@
             "slug" : "pazmuseu",
             "title" : "PazMuseu",
             "site": "https://pazmuseu.focomotor.com.ar/",
-            "overview": "Este proyecto fue presentado como solución planteada en las Olimpiadas de informática del 2022. El objetivo fue realizar un museo virtual, desde el cual se puede acceder mediante un BeepCons. Desde la aplicación se puede conectar a un BeepCons y acceder a la obra adecuada. El museo virtual cuenta con sistema de exposiciones, rutas, guías, turnos e inscripciones.",
-            "dev_notes": "La aplicación fue construida totalmente con Laravel en el plazo de una semana, cuenta con 5 cruds completos (exposiciones, rutas, guías, turnos e inscripciones), adicionalmente cuenta con sistema de envío de emails para la confirmación de inscripciones a turnos. El sistema tiene un panel de administración incorporado. A continuación se puede ver el gráfico DER que se utilizó:",
-            "skills": [
-                "Laravel",
-                "Bootstrap"
+            "overview": "This project was presented as a solution to the problem posed in the 2022 Olympics of computer science in education in Argentina, the objective was to create a virtual museum, which can be accessed through a BeepCons. The objective was to create a virtual museum, which can be accessed through a BeepCons. The virtual museum has a system of exhibitions, routes, guides, shifts and registrations.",
+            "development": "The application was built entirely with Laravel within a week, it has 5 complete cruds (exhibitions, routes, guides, shifts and registrations), additionally it has a system for sending emails to confirm registrations to shifts. The system has a built-in administration panel. Below you can see the DER graphic that was used:<br><img class='mt-6' src='https://i.ibb.co/BPhq36q/Diagram3.jpg'/>",
+            "stack": [
+                {"name": "Laravel", "color": "red"},
+                {"name": "Boostrap", "color": "purple"}
             ],
             "thumbnail": "/img/works/thumbnails/pazmuseu.png",
             "images": [
@@ -133,16 +135,34 @@
             ]
         },
         {
+            "slug" : "calcbraille",
+            "title" : "Calculadora Braille",
+            "site": "https://calculadora-braille.web.app/",
+            "overview": "This is a simple and intuitive calculator web application, intended to be used by blind and visually impaired people. For this reason the calculator is designed with bright colors and high contrasts, each key pressed and the result of the calculations is narrated by a computer voice. The project was presented at the \"Fairs of Education, Arts, Science and Technology\" in Olavarría, Buenos Aires, Argentina in 2021 obtaining the following certification:<br><img class='mt-6' src='https://i.ibb.co/6P67M5w/IMG-20220928-133139.png'/>",
+            "development": "The application was built with Vue, a lot of care was taken in the interface, being remodeled several times. For the numbers to be narrated we used the npm library \"written-number\", this allowed us to read the numbers completely and not dictated one by one.",
+            "stack": [
+                {"name": "NuxtJs", "color": "green"},
+                {"name": "Vue", "color": "green"},
+                {"name": "Javascript ES6", "color": "yellow"},
+                {"name": "CSS Advanced", "color": "blue"}
+            ],
+            "thumbnail": "/img/works/thumbnails/calcbraille.png",
+            "images": [
+                "/img/works/calcbraille-1.png",
+                "/img/works/calcbraille-2.png"
+            ]
+        },   
+        {
             "slug" : "eestn2",
             "title" : "Escuela Técnica N°2",
             "site": "https://eest-n2.web.app/",
-            "overview": "Como estudiante de Informática de la “Escuela Técnica N°2” de Olavarría, Buenos Aires, Argentina, con mi curso evaluamos que la escuela necesitaba un canal de comunicación digital que permita que próximos estudiantes la conozcan y puedan encontrar información oportuna, es por eso que desarrollamos un sitio desde el cual se pueden publicar noticias, información de las tecnicaturas, y libros digitales.",
-            "dev_notes": "Mi trabajo fue llevar las ideas y esquemas a un sitio web finalizado, para esto utilicé Vue y Firebase como base de datos y servidor de imágenes. El sitio se puede administrar y cuenta con un dashboard de gestión completo.",
-            "skills": [
-                "Vue",
-                "Firebase",
-                "Javascript ES6",
-                "Bootstrap"
+            "overview": "As a student of Computer Science at the \"Escuela Técnica N°2\" of Olavarría, Buenos Aires, Argentina, in my course we evaluated that the school needed a digital communication channel that would allow future students to know the school and find timely information, that is why we developed a site from which news, information of the technical courses and digital books can be published.",
+            "development": "My job was to take the ideas and schematics to a finished website, for this I used Vue and Firebase as database and image server. The site can be administered from a complete management dashboard.",
+            "stack": [
+                {"name": "Vue", "color": "green"},
+                {"name": "Firebase", "color": "yellow"},
+                {"name": "Javascript ES6", "color": "yellow"},
+                {"name": "Bootstrap", "color": "purple"}
             ],
             "thumbnail": "/img/works/thumbnails/eestn2.png",
             "images": [
@@ -153,38 +173,17 @@
                 "/img/works/eestn2-5.png"
             ]
         }, 
-
-        {
-            "slug" : "calcbraille",
-            "title" : "Calculadora Braille",
-            "site": "https://calculadora-braille.web.app/",
-            "overview": "Se trata de una aplicación web de calculadora simple e intuitiva, con el fin de ser utilizada por personas no videntes o con problemas visuales. La calculadora esta diseñada con colores llamativos y con altos contrastes, cada tecla es narrada por la aplicación así como el resultado de los cálculos. El proyecto fue presentado en la “Ferias de Educación, Artes, Ciencias y Tecnología” del de Olavarría, Buenos Aires, Argentina en 2021 obteniendo la siguiente certificación:",
-            "dev_notes": "La aplicación fue construida con Vue, su desarrollo buscó mejorar las alternativas al mercado existente, cuidando la interfaz y haciendo que los números sean narrados correctamente, para esto se utilizó la librería de npm “written-number”.",
-            "skills": [
-                "Vue",
-                "NuxtJs",
-                "Javascript ES6",
-                "Bootstrap",
-                "CSS Avanzado"
-            ],
-            "thumbnail": "/img/works/thumbnails/calcbraille.png",
-            "images": [
-                "/img/works/calcbraille-1.png",
-                "/img/works/calcbraille-2.png"
-            ]
-        },   
-        
         {
             "slug" : "elbosqueinmobiliaria",
             "title" : "El bosque inmobiliaria",
             "site": "https://elbosqueinmobiliaria.com.ar/",
-            "overview": "Un sitio web es un excelente medio para promocionar propiedades, y más cuando es mediante una página totalmente personalizada, este es el caso de la inmobiliaria “El bosque” ubicada en Río Turbio, Santa Cruz, Argentina. Desde su página se puede ver a detalle cada propiedad; galería, metros cuadrados, ambientes, descripción, servicios, entre otros.",
-            "dev_notes": "La web fue desarrollada con Wordpress y Elementor, fue imprescindible el plugin JetEngine, desde el cual se implementó un nuevo tipo de post, campos personalizados, formularios de administración y filtros de búsqueda.",
-            "skills": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Wordpress (Elementor y JetEngine avanzado)"
+            "overview": "Website of online courses with university certification. There are more than 20 courses organized in 9 categories. Information can be found easily and has several communication channels so that any interested student can get more information.",
+            "development": "This website was developed with Wordpress, as it allows a fast development and administration. I used the well-known visual editor Elementor, even though sometimes I had to program sections with HTML and Javascript so that the result is completely adapted to the client's wishes.",
+            "stack": [
+                {"name": "HTML", "color": "green"},
+                {"name": "CSS", "color": "blue"},
+                {"name": "Javascript", "color": "yellow"},
+                {"name": "Wordpress (Elementor Advanced)", "color": "blue"}
             ],
             "thumbnail": "/img/works/thumbnails/elbosqueinmobiliaria.png",
             "images": [
@@ -197,13 +196,13 @@
             "slug" : "capacitacionargentina",
             "title" : "Capacitación Argentina",
             "site": "http://capacitacionargentina.com/",
-            "overview": "Sitio web de cursos online con certificación universitaria. Hay más de 20 cursos organizados en 9 categorías. Se puede encontrar la información fácilmente y tiene diversos canales de comunicación para que cualquier estudiante interesado pueda obtener más información.",
-            "dev_notes": "Este sitio web fue desarrollado con Wordpress ya que permite un rápido desarrollo y administración. Utilicé el conocido editor visual Elementor, aun así en ocasiones tuve que programar secciones con HTML y Javascript para que el resultado está completamente adaptado a los deseos del cliente.",
-            "skills": [
-                "HTML",
-                "CSS",
-                "Javascript",
-                "Wordpress (Elementor avanzado)"
+            "overview": "Website for the real estate agency \"El bosque\" located in Río Turbio, Santa Cruz, Argentina with the objective of publishing and promoting properties. From the page you can see in detail each property; gallery, square meters, rooms, description, services, among others",
+            "development": "The website was developed with Wordpress and Elementor, the JetEngine plugin was essential, from which a new type of post, custom fields, administration forms and search filters were implemented.",
+            "stack": [
+                {"name": "HTML", "color": "orange"},
+                {"name": "CSS", "color": "blue"},
+                {"name": "Javascript", "color": "yellow"},
+                {"name": "Wordpress (Elementor Advanced)", "color": "blue"}
             ],
             "thumbnail": "/img/works/thumbnails/capacitacionargentina.png",
             "images": [
@@ -213,30 +212,31 @@
             ]
         }
     ],
-    "contact_title": "Contactame",
-    "contact_description": "Me interesan las oportunidades de trabajo freelancer, especialmente los grandes proyectos. Pero, si tenés otra petición o pregunta, no dudes en contactar.",
+    "contact_title": "Contact me",
+    "contact_form_title": "Contact me",
+    "contact_form_description": "I am interested in freelancer opportunities, especially large projects. But, if you have any other request or question, don't hesitate to contact me.",
     "contact_form":{
         "name": {
-            "label": "Nombre",
-            "placeholder": "Escribí tu nombre"
+            "label": "Name",
+            "placeholder": "Write your name"
         },
         "email": {
             "label": "Email",
-            "placeholder": "Escribí tu email"
+            "placeholder": "Write your email"
         },
         "subject": {
-            "label": "Asunto",
-            "placeholder": "Escribí un asunto"
+            "label": "Subject",
+            "placeholder": "Write your subject"
         },
         "message": {
-            "label": "Mensaje",
-            "placeholder": "Escribí un mensaje"
+            "label": "Message",
+            "placeholder": "Write your message"
         },
         "submit": {
-            "label": "Enviar mensaje"
+            "label": "Send message"
         }
     },
-    "footer_before_paragraph": "Hecho con "
+    "footer_before_paragraph": "Made with "
 
 
 
