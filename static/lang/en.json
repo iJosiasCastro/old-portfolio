@@ -1,6 +1,6 @@
 {
     "lang": "en",
-    "lang_prefix": "",
+    "lang_prefix": "en.",
     "header_items": [
         {"title": "Home", "route_name": "home"},
         {"title": "Works", "route_name": "works.index"},
@@ -71,7 +71,6 @@
     "works_breadcums_home_label": "Home",
     "works_breadcums_works_label": "Works",
     "works_index_title": "All my works",
-    "works_show_title": "All my works",
     "works_show_overview_title": "Overview",
     "works_show_overview_development_title": "Development",
     "works_show_overview_stack_title": "Stack",
@@ -212,6 +211,8 @@
             ]
         }
     ],
+    "contact_post_link": "https://forms.un-static.com/forms/f4e36e1eab86f04225a73b7a68a10d9c637f7748",
+    "contact_success": "<span class='font-medium'>Thank you, your message was received.</span> I will be contacting you shortly.",
     "contact_title": "Contact me",
     "contact_form_title": "Contact me",
     "contact_form_description": "I am interested in freelancer opportunities, especially large projects. But, if you have any other request or question, don't hesitate to contact me.",

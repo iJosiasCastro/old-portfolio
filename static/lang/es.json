@@ -1,6 +1,6 @@
 {
     "lang": "es",
-    "lang_prefix": "es.",
+    "lang_prefix": "",
     "header_items": [
         {"title": "Inicio", "route_name": "home"},
         {"title": "Trabajos", "route_name": "works.index"},
@@ -71,7 +71,6 @@
     "works_breadcums_home_label": "Inicio",
     "works_breadcums_works_label": "Trabajos",
     "works_index_title": "Todos mis trabajos",
-    "works_show_title": "Todos mis trabajos",
     "works_show_overview_title": "Resumen",
     "works_show_overview_development_title": "Desarrollo",
     "works_show_overview_stack_title": "Stack",
@@ -212,6 +211,8 @@
             ]
         }
     ],
+    "contact_post_link": "https://forms.un-static.com/forms/bd1179eb0856b6b6a63dd163005b1cbaed79b54e",
+    "contact_success": "<span class='font-medium'> Gracias, tu mensaje fue recibido.</span> En breve me estaré comunicando con vos.",
     "contact_title": "Contactame",
     "contact_form_title": "Contactame",
     "contact_form_description": "Me interesan las oportunidades de trabajo freelancer, especialmente los grandes proyectos. Pero, si tenés otra petición o pregunta, no dudes en contactar.",
@@ -237,7 +238,4 @@
         }
     },
     "footer_before_paragraph": "Hecho con "
-
-
-
 }

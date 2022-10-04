@@ -1,6 +1,6 @@
 <template>
     <div class="grid gap-2 md:gap-4 grid-cols-2 md:grid-cols-3">
-        <div v-for="work in works" :key="work.slug" class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+        <div v-for="(work, i) in data.works" :key="work.slug" v-show="length>0?i<length:true" class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
             <NuxtLink :to="{name: data.lang_prefix+'works.show', params: {slug: work.slug} }">
                 <img class="rounded-t-lg object-cover" :src="work.thumbnail" alt="" />
             </NuxtLink>
@@ -23,15 +23,5 @@
 <script>
 export default {
     props:['data', 'length'],
-    mounted(){
-        this.length ?
-            this.works = this.data.works.splice(0, [this.length])
-        :   this.works = this.data.works
-    },
-    data(){
-        return{
-            works:[]
-        }
-    }
 }
 </script>

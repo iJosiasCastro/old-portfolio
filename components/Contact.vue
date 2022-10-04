@@ -1,28 +1,32 @@
 <template>
+<div>
     <div class="bg-blue-700 grid lg:grid-cols-2">
         <div class="max-w-6xl mx-auto px-2 py-8 text-white">
             <div class="max-w-md mx-auto">
+                <div v-if="$route.hash==='#success'" v-html="data.contact_success" class="p-4 mb-4 text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+                </div>
+
                 <h3 class="text-xl sm:text-2xl font-semibold mb-3">{{data.contact_form_title}}</h3>
                 <p v-html="data.contact_form_description"></p>
                 
-                <form class="mt-8">
+                <form class="mt-8" method="post" :action="data.contact_post_link">
                     <div class="grid md:grid-cols-2 md:gap-6">
                         <div class="mb-6">
                             <label for="name" class="block mb-2 text-sm font-medium">{{data.contact_form.name.label}}</label>
-                            <input type="text" id="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.name.placeholder" required>
+                            <input type="text" name="name" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.name.placeholder" required>
                         </div>
                         <div class="mb-6">
                             <label for="email" class="block mb-2 text-sm font-medium">{{data.contact_form.email.label}}</label>
-                            <input type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.email.placeholder" required>
+                            <input type="email" name="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.email.placeholder" required>
                         </div>
                     </div>
                     <div class="mb-6">
-                        <label for="subject" class="block mb-2 text-sm font-medium">{{data.contact_form.email.label}}</label>
-                        <input type="text" id="subject" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.subject.placeholder" required>
+                        <label for="subject" class="block mb-2 text-sm font-medium">{{data.contact_form.subject.label}}</label>
+                        <input type="text" name="subject" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light" :placeholder="data.contact_form.subject.placeholder" required>
                     </div>
                     <div class="mb-6">
                         <label for="message" class="block mb-2 text-sm font-medium">{{data.contact_form.message.label}}</label>
-                        <textarea type="text" id="message" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light resize-none" :placeholder="data.contact_form.message.placeholder" rows="10" required>
+                        <textarea type="text" name="message" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-800 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 dark:shadow-sm-light resize-none" :placeholder="data.contact_form.message.placeholder" rows="10" required>
                         </textarea>
                     </div>
 
@@ -55,6 +59,7 @@
             </div>
         </div>
     </div>
+</div>
 </template>
 
 

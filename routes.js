@@ -9,39 +9,43 @@ export default {
         },
         {
             name: 'works.index',
-            path: '/works',
+            path: '/trabajos',
             component: resolve(__dirname, 'views/work/index.vue')
         },
         {
             name: 'works.show',
-            path: '/works/:slug',
+            path: '/trabajos/:slug',
             component: resolve(__dirname, 'views/work/show.vue')
         },
         {
             name: 'contact',
-            path: '/contact',
+            path: '/contacto',
             component: resolve(__dirname, 'views/contact.vue')
         },
         // Spanish
         {
-            name: 'es.home',
-            path: '/es',
+            name: 'en.home',
+            path: '/en',
             component: resolve(__dirname, 'views/home.vue')
         },
         {
-            name: 'es.works.index',
-            path: '/es/trabajos',
+            name: 'en.works.index',
+            path: '/en/works',
             component: resolve(__dirname, 'views/work/index.vue')
         },
         {
-            name: 'es.works.show',
-            path: '/es/trabajos/:slug',
+            name: 'en.works.show',
+            path: '/en/works/:slug',
             component: resolve(__dirname, 'views/work/show.vue')
         },
         {
-            name: 'es.contact',
-            path: '/es/contacto',
+            name: 'en.contact',
+            path: '/en/contact',
             component: resolve(__dirname, 'views/contact.vue')
+        },
+        {
+            path: '*',
+            redirect: '/',
         },
       ]
     }

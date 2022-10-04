@@ -1,7 +1,7 @@
 import routes from './routes.js'
 export default {
   // Target: https://go.nuxtjs.dev/config-target
-  target: 'static',
+  target: 'server',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -19,9 +19,10 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
       { rel: 'stylesheet', href: '/css/flowbite.min.css' },
       { rel: 'stylesheet', href: '/css/tailwind.min.css' },
+      { rel: 'stylesheet', href: 'https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css' },
     ],
     script : [
-      { src: '/js/flowbite.js', body: true}
+      // { src: '/js/flowbite.js', body: true}
     ]
   },
 
@@ -32,6 +33,7 @@ export default {
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
     { src: '~/plugins/vue-picture-swipe', ssr: false },
+    { src: '~/plugins/vue-animate-onscroll.js', ssr: false },
     { src: '~/plugins/filters.js', ssr: true },
     
   ],
@@ -45,15 +47,16 @@ export default {
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
-      '@nuxt/http'
   ],
+
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
   },
 
   server: {
-    host: "0.0.0.0"
+    host: "0.0.0.0",
+    port: 3001
   },
 
   router: {

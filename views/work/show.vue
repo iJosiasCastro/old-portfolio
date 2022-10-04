@@ -58,19 +58,21 @@
 </template>
 
 <script>
+import es from "~/static/lang/es.json";
+import en from "~/static/lang/en.json";
 export default {
   head(){
     return {
-      title: this.data.work_show_title,
+      title: this.work.title,
     }
   },
-  async asyncData({$http, route, params}){
-    const lang = route.name.slice(0,3)=='es.' ? 'es' : 'en'
-    return await $http.$get(`/lang/${lang}.json`)
-      .then((res) => {
-        const work = res.works.find(e=>e.slug==params.slug)
-        return {work, data: res}
-      })
+  async asyncData({route, params}){
+    const lang = route.name.slice(0,3)=='en.' ? en : es
+    const work = lang.works.find(e=>e.slug==params.slug)
+    if(!work){
+        redirect('/')
+    }
+    return {work, data: lang}
   },
 }
 </script>

@@ -1,8 +1,1 @@
-Add animations
-
-Save scroll position when change lang
-Fix toggle button
-
-Fix link work title and read more button
-
-Translate every thing
+Hacer que el formulario funcione
