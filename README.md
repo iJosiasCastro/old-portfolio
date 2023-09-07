@@ -1,3 +1,12 @@
+<h1 align="center">
+  josiascastro.tk.com
+</h1>
+<p align="center">
+  Initial release of <a href="https://josiascastro.tk" target="_blank">josiascastro.tk</a> developed with <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a></a>
+</p>
+
+![demo](https://raw.githubusercontent.com/iJosiasCastro/portfolio/main/demo/josiascastro.tk_en.png)
+
 # Portfolio
 Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a developer.
 
@@ -5,7 +14,7 @@ Getting Started
 To get this project up and running on your local machine, follow these steps:
 
 Prerequisites
-Node.js: Make sure you have Node.js 18 installed on your system.
+Node.js: Make sure you have Node.js 14.21.3 installed on your system.
 
 ## Clone the repository
 ```bash
@@ -42,7 +51,7 @@ $ npm run generate
 
 ## Production Deployment
 Using PM2
-For a production-ready deployment, you can use PM2 to manage your Node.js application. Here's how:
+For a production-ready deployment, you can use PM2. Here's how:
 ```bash
 # Install PM2 globally (if not already installed)
 $ npm install pm2@latest -g
