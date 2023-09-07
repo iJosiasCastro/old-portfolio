@@ -17,7 +17,7 @@
             "icon": "<path d=\"M21.698 10.658l2.302 1.342-12.002 7-11.998-7 2.301-1.342 9.697 5.658 9.7-5.658zm-9.7 10.657l-9.697-5.658-2.301 1.343 11.998 7 12.002-7-2.302-1.342-9.7 5.657zm0-19l8.032 4.685-8.032 4.685-8.029-4.685 8.029-4.685zm0-2.315l-11.998 7 11.998 7 12.002-7-12.002-7z\"/>",
             "points":[
                 {
-                    "title": "Lenguajes",
+                    "title": "Languages",
                     "items": ["HTML", "CSS", "SASS", "Javascript ES5/ES6"]
                 },
                 {
@@ -25,7 +25,7 @@
                     "items": ["Vue", "Nuxt", "Bootstrap", "Tailwind"]
                 },
                 {
-                    "title" : "Herramientas",
+                    "title" : "Tools",
                     "items": ["Git", "Wordpress (Elementor Advanced)"]
                 }
             ]
@@ -36,7 +36,7 @@
             "icon": "<path d=\"m21 4c0-.478-.379-1-1-1h-16c-.62 0-1 .519-1 1v16c0 .621.52 1 1 1h16c.478 0 1-.379 1-1zm-16.5.5h15v15h-15zm2.818 5.865 2.635 1.622-2.641 1.645c-.207.146-.318.378-.318.613 0 .601.682.966 1.182.613l3.511-2.257c.199-.141.318-.369.318-.614 0-.244-.119-.472-.318-.613l-3.505-2.235c-.498-.35-1.182.009-1.182.612 0 .236.111.468.318.614zm9.678 3.873c0-.414-.336-.75-.75-.75h-3.5c-.413 0-.75.336-.75.75s.337.75.75.75h3.5c.414 0 .75-.336.75-.75z\" fill-rule=\"nonzero\"/>",
             "points":[
                 {
-                    "title": "Lenguajes",
+                    "title": "Languages",
                     "items": ["PHP", "SQL"]
                 },
                 {
@@ -44,13 +44,13 @@
                     "items": ["Laravel (MVC y Rest API)", "Firebase"]
                 },
                 {
-                    "title" : "Herramientas",
+                    "title" : "Tools",
                     "items": ["Git", "Oracle Cloud", "Linux", "Dia (DFD y DER)"]
                 }
             ]
         },
         {
-            "title": "Profesor",
+            "title": "Teacher",
             "description": "I teach programming classes in my local community, my goal is to help other developers to keep improving.",
             "icon": "<path d=\"M5.495 2h16.505v-2h-17c-1.657 0-3 1.343-3 3v18c0 1.657 1.343 3 3 3h17v-20h-16.505c-1.375 0-1.375-2 0-2zm.505 4h14v16h-14v-16z\"/>",
             "points":[
