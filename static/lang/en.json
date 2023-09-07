@@ -6,8 +6,8 @@
         {"title": "Works", "route_name": "works.index"},
         {"title": "Contact", "route_name": "contact"}
     ],
-    "home_title": "👋 Hi, i'am Josias Castro",
-    "home_presentation_title": "👋 Hi, i'am Josias Castro",
+    "home_title": "👋 Hi, I'am Josias Castro",
+    "home_presentation_title": "👋 Hi, I'am Josias Castro",
     "home_presentation_paragraph": "Fullstack Web Apps Developer, I love technology and I can say that coding is my thing.",
     "home_about_hero_paragraph": "I started programming in a self-taught way to create my own projects, then I started as a freelancer programmer where I worked with several teams and startups to get a digital product with the best standards.<br><br>I am a self-confident person, curious by nature and I am always working to improve my skills.",
     "skills": [

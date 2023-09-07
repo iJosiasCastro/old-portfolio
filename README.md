@@ -1,29 +1,61 @@
-# Porfolio
+# Portfolio
+Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a developer.
 
-## Build Setup
+Getting Started
+To get this project up and running on your local machine, follow these steps:
+
+Prerequisites
+Node.js: Make sure you have Node.js 18 installed on your system.
+
+## Clone the repository
+```bash
+$ git clone [repository-url]
+$ cd [repository-folder]
+```
+## Install dependencies
+```bash
+$ npm install
+```
+Development Server
 
 ```bash
-# install dependencies
-$ npm install
-
-# serve with hot reload at localhost:3000
+# Start the development server with hot reload at localhost:3000
 $ npm run dev
+```
+Building for Production
+To prepare the portfolio for production, follow these steps:
 
-# build for production and launch server
+## Build for production
+```bash
 $ npm run build
+```
+# Start the production server
+```bash
 $ npm run start
+```
+Generating a Static Project
+If you prefer a static version of the portfolio, you can generate it using:
 
-# generate static project
+```bash
 $ npm run generate
 ```
 
-## Production
-
-### PM2 Usage
+## Production Deployment
+Using PM2
+For a production-ready deployment, you can use PM2 to manage your Node.js application. Here's how:
 ```bash
-npm install pm2@latest -g
-pm2 start npm --name $app-name -- run start
-pm2 save
-pm2 ls  
-pm2 delete
+# Install PM2 globally (if not already installed)
+$ npm install pm2@latest -g
+
+# Start your application with PM2
+$ pm2 start npm --name [app-name] -- run start
+
+# Save the process list
+$ pm2 save
+
+# List running applications
+$ pm2 ls
+
+# Delete an application
+$ pm2 delete [app-name]
 ```
