@@ -18,14 +18,6 @@
         <vue-picture-swipe class="viewer" :isOpen="isOpen" :items="items" :options="options" @close="hidePhotoSwipe"></vue-picture-swipe>
     </client-only>
 
-    <!-- <noscript>
-        <div class="overflow-hidden relative rounded-lg h-0 object-cover" style="padding-top: 70.37%">
-            <div class="duration-200 ease-linear">
-                <img :src="$store.state.large_url + images[0].name" class="object-cover h-full block absolute top-1/2 left-1/2 w-full -translate-x-1/2 -translate-y-1/2">
-            </div>
-        </div>
-    </noscript> -->
-
 </div>
 </template>
 
