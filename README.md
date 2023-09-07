@@ -7,7 +7,6 @@
 
 ![demo](https://raw.githubusercontent.com/iJosiasCastro/portfolio/main/demo/josiascastro.tk_en.png)
 
-# Portfolio
 Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a developer.
 
 Getting Started
