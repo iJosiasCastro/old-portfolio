@@ -5,7 +5,7 @@
   Initial release of <a href="https://josiascastro.tk" target="_blank">josiascastro.tk</a> developed with <a href="https://nuxtjs.org/" target="_blank">NuxtJS</a></a>
 </p>
 
-![demo](https://raw.githubusercontent.com/iJosiasCastro/portfolio/main/demo/josiascastro.tk_en.png)
+![demo](https://raw.githubusercontent.com/iJosiasCastro/old-portfolio/main/demo/josiascastro.tk_en.png)
 
 Welcome to my portfolio! This repository showcases my projects, skills, and experiences as a developer.
 
